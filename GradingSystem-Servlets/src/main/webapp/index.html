@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap"
+            rel="stylesheet">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+
+    <!-- Theme CSS -->
+    <link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- =======================
+Header START -->
+<!-- =======================
+Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+    <!-- =======================
+Inner intro START -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 col-xl-6 mx-auto">
+                    <div class="p-4 p-sm-5 bg-primary bg-opacity-10 rounded">
+                        <h2>Log in to your account</h2>
+                        <!-- Form START -->
+                        <form action="AuthenticationServlet" method="post" class="mt-4">
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label class="form-label" for="exampleInputEmail1">Username</label>
+                                <input name="username" class="form-control" id="exampleInputEmail1"
+                                       placeholder="username">
+                            </div>
+                            <!-- Password -->
+                            <div class="mb-3">
+                                <label class="form-label" for="exampleInputPassword1">Password</label>
+                                <input name="password" type="password" class="form-control" id="exampleInputPassword1"
+                                       placeholder="*********">
+                            </div>
+                            <!-- Button -->
+                            <div class="row align-items-center">
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn btn-success">Sign me in</button>
+                                </div>
+                                <div class="col-sm-8 text-sm-end">
+                                    <span>Don't have an account? <a href="signup.html"><u>Sign up</u></a></span>
+                                </div>
+                            </div>
+                            <input type="hidden" name="action" value="signin">
+                        </form>
+                        <!-- Form END -->
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =======================
+Inner intro END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>
